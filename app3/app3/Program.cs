@@ -70,10 +70,12 @@ namespace app3
             agenda = Console.ReadLine() + "*";
             Console.WriteLine("Ingrese Apellido: ");
             agenda = agenda + Console.ReadLine() + "*";
+
             Console.WriteLine("Télefono: ");
             agenda = agenda + Console.ReadLine() + "*";
             Console.WriteLine("Ingrese Dirección: ");
             agenda = agenda + Console.ReadLine() + "*";
+
             ar = File.AppendText(nombre);
             ar.WriteLine(agenda);
             agenda = " ";
